@@ -88,8 +88,11 @@
         });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARmlZdC56EQCWrGryoVKvQwhhiBsqm_tc&callback=initMap{{mapType}}"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{mapAPI}}&callback=initMap{{mapType}}"
+    async defer>
+    // var mapAPI = process.env.GOOGLE_MAPS_KEY
+    // console.log(mapAPI)
+    </script>
 
       <br>
 
