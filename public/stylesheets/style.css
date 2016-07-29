@@ -1,11 +1,23 @@
 html, body {
+  font-family: 'Lato', sans-serif;
   background-color: #333;
   color: #eee;
   padding: 20px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*font:'Lato', sans-serif;*/
   height: 90%;
   margin: 0;
+}
 
+html {
+  border: 3px solid #ddd;
+  margin: 20px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #ddd;
 }
 
 #map {
@@ -15,14 +27,13 @@ html, body {
 .center {
     margin: auto;
     width: 70%;
-    border: 3px solid #eee;
     padding: 10px;
 }
 
 .map-button {
   background-color: #4CAF30;
   border: none;
-  color: #eee;
+  color: #ddd;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
