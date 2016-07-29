@@ -35,6 +35,27 @@
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
       }
+      function initMap() {
+        var myLatLng = {lat: -41.2970827, lng: 174.774749};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+      //LIGHT RAIL FUNCTION BELOW
+
+
+
+
+
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARmlZdC56EQCWrGryoVKvQwhhiBsqm_tc&callback=initMapCycling"
     async defer></script>
