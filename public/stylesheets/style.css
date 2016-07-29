@@ -5,10 +5,18 @@ html, body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   height: 90%;
   margin: 0;
+
 }
 
 #map {
   height: 80%;
+}
+
+.center {
+    margin: auto;
+    width: 70%;
+    border: 3px solid #eee;
+    padding: 10px;
 }
 
 .map-button {
