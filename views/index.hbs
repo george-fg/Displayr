@@ -6,25 +6,38 @@
       documentation:
       https://developers.google.com/maps/documentation/javascript/tutorial -->
     <!-- <link rel="stylesheet" href="/maps/documentation/javascript/style.css"> -->
-  </head>
+</head>
   <body>
     <h1 class="text-center">{{greeting}} and Welcome to {{title}}!!!</h1>
     <h3 class="text-center">... {{subtitle}}</h3>
     <div id="map"></div>
     <script>
-      function initMap() {
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -41.2969051, lng: 174.7720253},
-          scrollwheel: false,
+      var map;
+      function initMapDefault() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -41.2969092, lng: 174.7720306},
           zoom: 16
         });
       }
-      var googleMapKey =
-      process.env.Map_key
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARmlZdC56EQCWrGryoVKvQwhhiBsqm_tc&callback=initMap"
-      async defer></script>
+      function initMapCycling() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -41.2969092, lng: 174.7720306},
+          zoom: 16
+        });
+        var bikeLayer = new google.maps.BicyclingLayer();
+        bikeLayer.setMap(map);
+      }
+      function initMapTraffic() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -41.2969092, lng: 174.7720306},
+          zoom: 16
+        });
+        var trafficLayer = new google.maps.TrafficLayer();
+        trafficLayer.setMap(map);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARmlZdC56EQCWrGryoVKvQwhhiBsqm_tc&callback=initMapCycling"
+    async defer></script>
 
       <br>
 
@@ -33,5 +46,6 @@
         <button class="map-button" type="button">Traffic Flow</button>
         <button class="map-button" type="button">Bus Stops</button>
       </div>
+
   </body>
 </html>
