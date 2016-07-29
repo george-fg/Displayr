@@ -21,11 +21,11 @@ router.get('/lightrail', function(req, res, next) {
 });
 
 router.get('/eda', function(req, res, next) {
-  res.render('index', { greeting: 'Hello', title: 'Displayr', subtitle: '(without an e)', mapType: 'Eda'});
+  res.render('index', { greeting: 'Hello', title: 'Displayr', subtitle: '(without an e)', mapType: 'EDA'});
 });
 
 router.get('/area51', function(req, res, next) {
-  res.render('index', { greeting: 'Hello', title: 'Displayr', subtitle: '(without an e)', mapType: 'Area51'});
+  res.render('index', { greeting: 'Hello', title: 'Displayr', subtitle: '(without an e)', mapType: 'AREA51'});
 });
 
 router.get('/cookietime', function(req, res, next) {
