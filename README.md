@@ -1,21 +1,21 @@
 Displayr
-` Introduction:
 
-Our MVP is a homepage displaying a button, when clicked it takes the user to another page which uses google maps API to display all the busstops within a certain radius around the eda building.
+Introduction:
 
-As a stretch goal we will add different buttons that link to different search parameters.
+Our Minimum Viable Product(MVP) is a homepage displaying a button + the Google Maps API map. When the button is clicked, it displays all the cycle routes around the Enspiral Dev Academy building.
+
+As a stretch goal we will add different buttons that show different layers/locations.
 
 Tools Needed:
 
 Google Maps API
 HTML
 CSS
-Handlebars
-- Express
+Handlebars module
+Express module
 
 Goals:
 
-Use APIs
-Using handlebars to render google data
-Use a few small, simple tests in TDD
-Steps: 1. Initialize repo and install all requried tools 2. Create a few basic tests - Do we have an index page - Check we have API 3. Create a template for index 4.
+Use an API.
+Use handlebars to render.
+Use a few small, simple tests in TDD.
