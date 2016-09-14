@@ -9,13 +9,19 @@ As a stretch goal we will add different buttons that show different layers/locat
 Tools Needed:
 
 Google Maps API
+
 HTML
+
 CSS
+
 Handlebars module
+
 Express module
 
 Goals:
 
 Use an API.
+
 Use handlebars to render.
+
 Use a few small, simple tests in TDD.
