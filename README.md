@@ -6,7 +6,7 @@ Our Minimum Viable Product(MVP) is a homepage displaying a button + the Google M
 
 As a stretch goal we will add different buttons that show different layers/locations.
 
-Tools Needed:
+# Tools Needed:
 
 Google Maps API
 
@@ -18,7 +18,7 @@ Handlebars module
 
 Express module
 
-Goals:
+# Goals:
 
 Use an API.
 
